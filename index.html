@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Professional electrical installation, repair, maintenance, solar and backup power services in Kenya. Get a free quote today.">
+
+    <meta name="keywords"
+          content="electrician Kenya, electrician Nairobi, electrical installation Kenya, electrical repairs Nairobi, solar installation Kenya, electrical contractor Kenya">
+
+    <meta name="theme-color" content="#07111f">
+
+    <title>PowerPro Electrical Kenya | Electrical & Solar Services</title>
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        /* =========================
+           COLORS
+        ========================== */
+
+        :root {
+            --navy: #07111f;
+            --navy-light: #0e1d31;
+            --yellow: #ffbf00;
+            --yellow-dark: #e5a900;
+            --white: #ffffff;
+            --light: #f5f7fa;
+            --text: #172033;
+            --muted: #647084;
+            --border: #e5e9ef;
+            --green: #16a05d;
+            --whatsapp: #25D366;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(7, 17, 31, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .navbar {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--yellow);
+            color: var(--navy);
+            display: grid;
+            place-items: center;
+            border-radius: 9px;
+            font-size: 1.3rem;
+            font-weight: 900;
+        }
+
+        .logo span {
+            color: var(--yellow);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #e9edf3;
+            font-size: 0.93rem;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--yellow);
+        }
+
+        .nav-button {
+            background: var(--yellow);
+            color: var(--navy) !important;
+            padding: 11px 17px;
+            border-radius: 7px;
+        }
+
+        .nav-button:hover {
+            background: white;
+        }
+
+        .mobile-menu {
+            display: none;
+            border: 0;
+            background: transparent;
+            color: white;
+            font-size: 1.7rem;
+            cursor: pointer;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            padding-top: 74px;
+            min-height: 720px;
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(255,191,0,0.15),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #07111f 0%,
+                    #0b1c30 55%,
+                    #07111f 100%
+                );
+
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--yellow);
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background: var(--yellow);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.6rem, 5vw, 4.5rem);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: var(--yellow);
+        }
+
+        .hero-text {
+            max-width: 650px;
+            color: #c5ceda;
+            font-size: 1.08rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+        }
+
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            padding: 14px 21px;
+            border-radius: 7px;
+            font-weight: 800;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--yellow);
+            color: var(--navy);
+        }
+
+        .btn-primary:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border-color: rgba(255,255,255,0.3);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--navy);
+        }
+
+        .hero-card {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+        }
+
+        .electric-icon {
+            width: 72px;
+            height: 72px;
+            background: var(--yellow);
+            color: var(--navy);
+            border-radius: 15px;
+            display: grid;
+            place-items: center;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+        }
+
+        .hero-card h3 {
+            font-size: 1.45rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-card p {
+            color: #bbc6d4;
+            margin-bottom: 25px;
+        }
+
+        .hero-check {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin: 13px 0;
+            color: #e5ebf2;
+        }
+
+        .check {
+            color: var(--yellow);
+            font-weight: 900;
+        }
+
+        /* =========================
+           TRUST BAR
+        ========================== */
+
+        .trust {
+            background: white;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .trust-grid {
+            min-height: 105px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            gap: 20px;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+        }
+
+        .trust-icon {
+            font-size: 1.5rem;
+        }
+
+        .trust-item strong {
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .trust-item small {
+            color: var(--muted);
+        }
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================== */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-header {
+            max-width: 680px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .section-label {
+            color: #a47b00;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 900;
+            font-size: 0.78rem;
+            margin-bottom: 10px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.1;
+            color: var(--navy);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--muted);
+        }
+
+        /* =========================
+           SERVICES
+        ========================== */
+
+        .services {
+            background: var(--light);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 30px;
+            transition: 0.25s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 45px rgba(8,20,35,0.09);
+            border-color: #d7dde6;
+        }
+
+        .service-icon {
+            width: 54px;
+            height: 54px;
+            display: grid;
+            place-items: center;
+            background: #fff6d8;
+            border-radius: 11px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: var(--navy);
+            margin-bottom: 9px;
+            font-size: 1.15rem;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 0.93rem;
+        }
+
+        /* =========================
+           ABOUT
+        ========================== */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-visual {
+            min-height: 430px;
+            border-radius: 20px;
+            background:
+                linear-gradient(
+                    rgba(7,17,31,0.7),
+                    rgba(7,17,31,0.85)
+                ),
+                radial-gradient(
+                    circle at 50% 30%,
+                    #f4c542,
+                    #10243a 60%
+                );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-visual::before {
+            content: "⚡";
+            font-size: 10rem;
+            opacity: 0.15;
+            position: absolute;
+        }
+
+        .about-badge {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .about-badge strong {
+            display: block;
+            font-size: 3rem;
+            color: var(--yellow);
+        }
+
+        .about-content h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.1;
+            color: var(--navy);
+            margin-bottom: 18px;
+        }
+
+        .about-content > p {
+            color: var(--muted);
+            margin-bottom: 25px;
+        }
+
+        .feature-list {
+            list-style: none;
+            display: grid;
+            gap: 13px;
+        }
+
+        .feature-list li {
+            display: flex;
+            gap: 11px;
+            align-items: flex-start;
+        }
+
+        .feature-list span {
+            color: var(--green);
+            font-weight: 900;
+        }
+
+        /* =========================
+           PROCESS
+        ========================== */
+
+        .process {
+            background: var(--navy);
+            color: white;
+        }
+
+        .process .section-header h2 {
+            color: white;
+        }
+
+        .process .section-header p {
+            color: #aebaca;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            position: relative;
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            background: rgba(255,255,255,0.04);
+        }
+
+        .step {
+            font-size: 0.75rem;
+            font-weight: 900;
+            color: var(--yellow);
+            margin-bottom: 15px;
+        }
+
+        .process-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .process-card p {
+            color: #aebaca;
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+           QUOTE
+        ========================== */
+
+        .quote {
+            background: var(--light);
+        }
+
+        .quote-box {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 45px;
+            max-width: 850px;
+            margin: auto;
+            box-shadow: 0 20px 50px rgba(10,25,45,0.06);
+        }
+
+        .quote-box h2 {
+            color: var(--navy);
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .quote-box > p {
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 17px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-weight: 750;
+            font-size: 0.88rem;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            border: 1px solid #dce1e8;
+            border-radius: 7px;
+            padding: 13px 14px;
+            outline: none;
+            background: white;
+            color: var(--text);
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--yellow-dark);
+            box-shadow: 0 0 0 3px rgba(255,191,0,0.13);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            margin-top: 20px;
+        }
+
+        /* =========================
+           TESTIMONIALS
+        ========================== */
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .testimonial {
+            padding: 28px;
+            border: 1px solid var(--border);
+            border-radius: 13px;
+            background: white;
+        }
+
+        .stars {
+            color: var(--yellow-dark);
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial p {
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        .customer {
+            font-weight: 800;
+        }
+
+        .customer small {
+            display: block;
+            color: var(--muted);
+            font-weight: 400;
+            margin-top: 2px;
+        }
+
+        /* =========================
+           FAQ
+        ========================== */
+
+        .faq {
+            background: var(--light);
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: auto;
+            display: grid;
+            gap: 10px;
+        }
+
+        details {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            padding: 20px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 800;
+            color: var(--navy);
+        }
+
+        details p {
+            color: var(--muted);
+            padding-top: 13px;
+        }
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+            padding: 75px 0;
+            background: var(--yellow);
+        }
+
+        .cta-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .cta h2 {
+            color: var(--navy);
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.1;
+        }
+
+        .cta p {
+            margin-top: 10px;
+            color: #463700;
+        }
+
+        .cta .btn {
+            background: var(--navy);
+            color: white;
+            white-space: nowrap;
+        }
+
+        .cta .btn:hover {
+            background: white;
+            color: var(--navy);
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #040b14;
+            color: white;
+            padding: 60px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 45px;
+            margin-bottom: 50px;
+        }
+
+        .footer-brand p {
+            color: #8794a6;
+            max-width: 350px;
+            margin-top: 15px;
+        }
+
+        footer h4 {
+            margin-bottom: 16px;
+        }
+
+        footer ul {
+            list-style: none;
+            display: grid;
+            gap: 9px;
+        }
+
+        footer li,
+        footer a {
+            color: #8794a6;
+            font-size: 0.92rem;
+        }
+
+        footer a:hover {
+            color: var(--yellow);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            color: #697587;
+            font-size: 0.82rem;
+        }
+
+        /* =========================
+           FLOATING WHATSAPP
+        ========================== */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 58px;
+            height: 58px;
+            background: var(--whatsapp);
+            color: white;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 1.65rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            z-index: 900;
+            transition: 0.2s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                position: absolute;
+                top: 74px;
+                left: 0;
+                width: 100%;
+                background: var(--navy);
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                padding: 10px 5%;
+                display: none;
+                border-top: 1px solid rgba(255,255,255,0.08);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                border-bottom: 1px solid rgba(255,255,255,0.07);
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 15px 5px;
+            }
+
+            .nav-button {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero {
+                min-height: auto;
+                padding-top: 125px;
+                padding-bottom: 70px;
+            }
+
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-grid {
+                gap: 40px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr 1fr;
+                padding: 25px 0;
+            }
+
+            .service-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-grid {
+                gap: 40px;
+            }
+
+            .cta-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 560px) {
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .hero-card {
+                padding: 25px;
+            }
+
+            .trust-grid,
+            .service-grid,
+            .process-grid,
+            .testimonial-grid,
+            .footer-grid,
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full {
+                grid-column: auto;
+            }
+
+            .quote-box {
+                padding: 25px 20px;
+            }
+
+            .about-visual {
+                min-height: 300px;
+            }
+
+            .cta .btn {
+                width: 100%;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+            }
+
+            .whatsapp {
+                right: 16px;
+                bottom: 16px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            <div class="logo-icon">⚡</div>
+            PowerPro <span>Electrical</span>
+        </a>
+
+        <button
+            class="mobile-menu"
+            id="mobileMenu"
+            aria-label="Open navigation">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#faq">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#quote" class="nav-button">
+                    Get a Quote
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                Electrical Services in Kenya
+            </div>
+
+            <h1>
+                Safe power.
+                <span>Done right.</span>
+            </h1>
+
+            <p class="hero-text">
+                Professional electrical installation, repairs, maintenance,
+                solar and backup power solutions for homes, businesses and
+                construction projects.
+            </p>
+
+            <div class="hero-buttons">
+
+                <!-- CHANGE PHONE NUMBER -->
+                <a
+                    href="tel:+254700000000"
+                    class="btn btn-primary">
+                    ☎ Call Us
+                </a>
+
+                <!-- CHANGE WHATSAPP NUMBER -->
+                <a
+                    href="https://wa.me/254700000000?text=Hello%20PowerPro%20Electrical,%20I%20would%20like%20a%20quote."
+                    target="_blank"
+                    class="btn btn-secondary">
+                    WhatsApp Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="electric-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Electrical work you can rely on
+            </h3>
+
+            <p>
+                From a faulty socket to a complete electrical installation,
+                our team focuses on safe, neat and reliable workmanship.
+            </p>
+
+            <div class="hero-check">
+                <span class="check">✓</span>
+                Residential & commercial work
+            </div>
+
+            <div class="hero-check">
+                <span class="check">✓</span>
+                Electrical fault finding & repairs
+            </div>
+
+            <div class="hero-check">
+                <span class="check">✓</span>
+                Solar & backup power solutions
+            </div>
+
+            <div class="hero-check">
+                <span class="check">✓</span>
+                Quotations available
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TRUST
+========================== -->
+
+<section class="trust">
+
+    <div class="container trust-grid">
+
+        <div class="trust-item">
+            <div class="trust-icon">🛡️</div>
+            <div>
+                <strong>Safety First</strong>
+                <small>Professional workmanship</small>
+            </div>
+        </div>
+
+        <div class="trust-item">
+            <div class="trust-icon">⚡</div>
+            <div>
+                <strong>Reliable Power</strong>
+                <small>Quality installations</small>
+            </div>
+        </div>
+
+        <div class="trust-item">
+            <div class="trust-icon">🇰🇪</div>
+            <div>
+                <strong>Kenya Based</strong>
+                <small>Local service & support</small>
+            </div>
+        </div>
+
+        <div class="trust-item">
+            <div class="trust-icon">💬</div>
+            <div>
+                <strong>Fast Response</strong>
+                <small>Call or WhatsApp</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================== -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Our Services
+            </div>
+
+            <h2>
+                Electrical solutions for everyday Kenya
+            </h2>
+
+            <p>
+                Practical electrical services for homes, offices,
+                shops, apartments, landlords and construction projects.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">🏠</div>
+
+                <h3>
+                    Residential Electrical
+                </h3>
+
+                <p>
+                    Wiring, sockets, lighting, distribution boards,
+                    switches, cooker connections and electrical upgrades.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🏢</div>
+
+                <h3>
+                    Commercial Electrical
+                </h3>
+
+                <p>
+                    Electrical installations and maintenance for shops,
+                    offices, apartments, restaurants and other businesses.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔧</div>
+
+                <h3>
+                    Electrical Repairs
+                </h3>
+
+                <p>
+                    Fault finding, tripping breakers, faulty sockets,
+                    lighting problems and other electrical repairs.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">☀️</div>
+
+                <h3>
+                    Solar Systems
+                </h3>
+
+                <p>
+                    Solar installation, maintenance and system upgrades
+                    for homes and businesses.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔋</div>
+
+                <h3>
+                    Backup Power
+                </h3>
+
+                <p>
+                    Inverter and backup power solutions designed around
+                    your household or business power needs.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">💡</div>
+
+                <h3>
+                    Lighting
+                </h3>
+
+                <p>
+                    Indoor, outdoor, security and energy-efficient
+                    lighting installations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================== -->
+
+<section id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-visual">
+
+            <div class="about-badge">
+
+                <strong>24/7</strong>
+
+                <span>
+                    Emergency support available
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <div class="section-label">
+                Why Choose Us
+            </div>
+
+            <h2>
+                Professional electrical work without the headache.
+            </h2>
+
+            <p>
+                We help Kenyan homeowners and businesses keep their
+                electrical systems safe, functional and dependable.
+            </p>
+
+            <ul class="feature-list">
+
+                <li>
+                    <span>✓</span>
+                    <div>
+                        <strong>Clear quotations</strong><br>
+                        Know what the work involves before we start.
+                    </div>
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    <div>
+                        <strong>Neat workmanship</strong><br>
+                        Installations designed to be safe and easy to maintain.
+                    </div>
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    <div>
+                        <strong>Quality materials</strong><br>
+                        Appropriate electrical components for the job.
+                    </div>
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    <div>
+                        <strong>Local service</strong><br>
+                        Serving customers across our selected areas in Kenya.
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================== -->
+
+<section class="process">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                How It Works
+            </div>
+
+            <h2>
+                Simple from quote to completion
+            </h2>
+
+            <p>
+                Tell us what you need and we'll guide you through the next step.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="step">
+                    STEP 01
+                </div>
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    Call or send us a WhatsApp message describing the job.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="step">
+                    STEP 02
+                </div>
+
+                <h3>
+                    Site Assessment
+                </h3>
+
+                <p>
+                    Where necessary, we assess the property and electrical requirements.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="step">
+                    STEP 03
+                </div>
+
+                <h3>
+                    Get Your Quote
+                </h3>
+
+                <p>
+                    We explain the work and provide a quotation in Kenyan shillings.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="step">
+                    STEP 04
+                </div>
+
+                <h3>
+                    We Get It Done
+                </h3>
+
+                <p>
+                    Once approved, we complete the work professionally and safely.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     QUOTE FORM
+========================== -->
+
+<section class="quote" id="quote">
+
+    <div class="container">
+
+        <div class="quote-box">
+
+            <h2>
+                Request a quote
+            </h2>
+
+            <p>
+                Fill in the details below and we'll get back to you.
+            </p>
+
+            <form id="quoteForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="e.g. John Kamau"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="07XX XXX XXX"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Service Needed
+                        </label>
+
+                        <select id="service" required>
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option>
+                                Residential Electrical
+                            </option>
+
+                            <option>
+                                Commercial Electrical
+                            </option>
+
+                            <option>
+                                Electrical Repairs
+                            </option>
+
+                            <option>
+                                Solar Installation
+                            </option>
+
+                            <option>
+                                Backup Power
+                            </option>
+
+                            <option>
+                                Lighting
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="e.g. Westlands, Nairobi"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label for="message">
+                            Tell us about the job
+                        </label>
+
+                        <textarea
+                            id="message"
+                            placeholder="Describe the electrical work you need..."
+                            required></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary form-submit">
+
+                    Request Quote via WhatsApp
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TESTIMONIALS
+========================== -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Customer Reviews
+            </div>
+
+            <h2>
+                What our customers say
+            </h2>
+
+            <p>
+                Replace these sample testimonials with genuine customer reviews.
+            </p>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "The team handled the wiring for our renovation
+                    professionally and left everything very neat."
+                </p>
+
+                <div class="customer">
+                    Jane M.
+                    <small>Nairobi</small>
+                </div>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "They responded quickly when we had an electrical
+                    fault and explained the problem clearly."
+                </p>
+
+                <div class="customer">
+                    Brian K.
+                    <small>Kiambu</small>
+                </div>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Good communication and a clean installation.
+                    We are happy with the lighting upgrade."
+                </p>
+
+                <div class="customer">
+                    David N.
+                    <small>Nairobi</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================== -->
+
+<section class="faq" id="faq">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                FAQ
+            </div>
+
+            <h2>
+                Common questions
+            </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+            <details>
+
+                <summary>
+                    How much does an electrician cost in Kenya?
+                </summary>
+
+                <p>
+                    The cost depends on the type of work, materials,
+                    location and complexity. Contact us for a quotation
+                    based on your specific job.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Do you provide emergency electrical repairs?
+                </summary>
+
+                <p>
+                    Contact us by phone or WhatsApp to check availability
+                    for urgent electrical faults in your service area.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Do you install solar systems?
+                </summary>
+
+                <p>
+                    Yes. We can assess your power requirements and recommend
+                    an appropriate solar or backup-power solution.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Which areas do you serve?
+                </summary>
+
+                <p>
+                    We serve customers in our selected areas of Kenya.
+                    Contact us with your location to confirm availability.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Are you EPRA licensed?
+                </summary>
+
+                <p>
+                    Add your actual EPRA electrical contractor licence
+                    details here. Only publish licence information that
+                    accurately represents your current authorization.
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================== -->
+
+<section class="cta">
+
+    <div class="container cta-content">
+
+        <div>
+
+            <h2>
+                Need an electrician?
+            </h2>
+
+            <p>
+                Call us or send a WhatsApp message for a quotation.
+            </p>
+
+        </div>
+
+        <a
+            href="https://wa.me/254700000000?text=Hello,%20I%20need%20an%20electrician."
+            target="_blank"
+            class="btn">
+
+            WhatsApp Us →
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+
+                    <div class="logo-icon">
+                        ⚡
+                    </div>
+
+                    PowerPro <span>Electrical</span>
+
+                </a>
+
+                <p>
+                    Professional electrical, solar and backup-power
+                    solutions for homes and businesses in Kenya.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Services
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#services">
+                            Electrical Installation
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Electrical Repairs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Solar Systems
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Backup Power
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#about">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#quote">
+                            Request Quote
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <ul>
+
+                    <!-- CHANGE THESE -->
+                    <li>
+                        Nairobi, Kenya
+                    </li>
+
+                    <li>
+                        <a href="tel:+254700000000">
+                            +254 700 000 000
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:info@powerpro.co.ke">
+                            info@powerpro.co.ke
+                        </a>
+                    </li>
+
+                    <li>
+                        Mon – Sat: 8:00 AM – 6:00 PM
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div>
+                © 2026 PowerPro Electrical. All rights reserved.
+            </div>
+
+            <div>
+                Kenya
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP BUTTON
+========================== -->
+
+<a
+    href="https://wa.me/254700000000?text=Hello%20PowerPro%20Electrical,%20I%20need%20electrical%20services."
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat with us on WhatsApp">
+
+    ☎
+
+</a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+    /* Mobile navigation */
+
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+
+    mobileMenu.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+
+    /* Close mobile menu after clicking a link */
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* Quote form → WhatsApp */
+
+    const quoteForm = document.getElementById("quoteForm");
+
+    quoteForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+            document.getElementById("name").value;
+
+        const phone =
+            document.getElementById("phone").value;
+
+        const service =
+            document.getElementById("service").value;
+
+        const location =
+            document.getElementById("location").value;
+
+        const message =
+            document.getElementById("message").value;
+
+
+        const whatsappNumber = "254700000000";
+
+
+        const whatsappMessage =
+            `Hello PowerPro Electrical,%0A%0A` +
+            `I would like to request a quotation.%0A%0A` +
+            `Name: ${name}%0A` +
+            `Phone: ${phone}%0A` +
+            `Service: ${service}%0A` +
+            `Location: ${location}%0A` +
+            `Details: ${message}`;
+
+
+        const whatsappURL =
+            `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+
+        window.open(
+            whatsappURL,
+            "_blank"
+        );
+
+    });
+
+</script>
+
+</body>
+</html>
